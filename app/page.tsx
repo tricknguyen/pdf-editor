@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import { atom, useAtom } from 'jotai';
+import pdfjsDist from "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.0.269/pdf.min.mjs";
 
 const fileSelected = atom(null);
 
@@ -11,7 +12,7 @@ export default function Home() {
   function onFileChange(event: any) {
     setFile(event.target.files[0]);
     const formData = new FormData();
-    debugger;
+
   };
 
   return (
